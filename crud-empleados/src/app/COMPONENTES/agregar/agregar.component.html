@@ -1,1 +1,34 @@
-<p>agregar works!</p>
+<div class="container">
+    <p>Agregar Equipo</p>
+    <div class="row">
+        <div class="col-sm-6">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Nombre del Empleado</label>
+                    <input [(ngModel)]="empleado.nombre" type="text" class="form-control" name="nombre">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nombre del Curso</label>
+                    <input [(ngModel)]="empleado.curso" type="text" class="form-control" name="curso">
+                </div>
+                <button (click)="agregar()" class="btn btn-primary">Agregar</button>
+            </form>
+        </div>
+        <div class="col-sm-6">
+            <form>
+                <div class="mb-3">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <label class="form-label">{{empleado.nombre}}</label>
+                </div>
+                <div class="mb-3">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <label class="form-label">{{empleado.curso}}</label>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
