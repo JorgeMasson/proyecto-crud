@@ -2,6 +2,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "suppressImplicitAnyIndexErrors": true,
+    "strictNullChecks":false,
+    "strictPropertyInitialization": false,
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
